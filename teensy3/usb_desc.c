@@ -1276,12 +1276,12 @@ struct usb_string_descriptor_struct string0 = {
 };
 
 struct usb_string_descriptor_struct usb_string_manufacturer_name_default = {
-        2 + MANUFACTURER_NAME_LEN * 2,
+        2 + sizeof(MANUFACTURER_NAME),
         3,
         MANUFACTURER_NAME
 };
 struct usb_string_descriptor_struct usb_string_product_name_default = {
-	2 + PRODUCT_NAME_LEN * 2,
+	2 + sizeof(PRODUCT_NAME),
         3,
         PRODUCT_NAME
 };

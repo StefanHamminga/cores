@@ -118,10 +118,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x0483
   #define DEVICE_CLASS		2	// 2 = Communication Class
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'U','S','B',' ','S','e','r','i','a','l'}
-  #define PRODUCT_NAME_LEN	10
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"USB Serial"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS		4
   #define NUM_USB_BUFFERS	12
@@ -141,10 +143,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
 #elif defined(USB_KEYBOARDONLY)
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x04D0
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'K','e','y','b','o','a','r','d'}
-  #define PRODUCT_NAME_LEN	8
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"Keyboard"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         4
   #define NUM_USB_BUFFERS	14
@@ -174,10 +178,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
 #elif defined(USB_HID)
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x0482
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'K','e','y','b','o','a','r','d','/','M','o','u','s','e','/','J','o','y','s','t','i','c','k'}
-  #define PRODUCT_NAME_LEN	23
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"Keyboard/Mouse/Joystick"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         6
   #define NUM_USB_BUFFERS	24
@@ -218,10 +224,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define DEVICE_CLASS		0xEF
   #define DEVICE_SUBCLASS	0x02
   #define DEVICE_PROTOCOL	0x01
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'S','e','r','i','a','l','/','K','e','y','b','o','a','r','d','/','M','o','u','s','e','/','J','o','y','s','t','i','c','k'}
-  #define PRODUCT_NAME_LEN	30
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"Serial/Keyboard/Mouse/Joystick"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS		7
   #define NUM_USB_BUFFERS	30
@@ -262,10 +270,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
 #elif defined(USB_TOUCHSCREEN)
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x04D3
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'K','e','y','b','o','a','r','d','/','T','o','u','c','h','s','c','r','e','e','n'}
-  #define PRODUCT_NAME_LEN	20
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"Keyboard/Touchscreen"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         5
   #define NUM_USB_BUFFERS	15
@@ -298,10 +308,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
 #elif defined(USB_HID_TOUCHSCREEN)
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x04D4
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'K','e','y','b','o','a','r','d','/','M','o','u','s','e','/','T','o','u','c','h','s','c','r','e','e','n'}
-  #define PRODUCT_NAME_LEN	26
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"Keyboard/Mouse/Touchscreen"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         6
   #define NUM_USB_BUFFERS	20
@@ -339,10 +351,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
 #elif defined(USB_MIDI)
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x0485
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'T','e','e','n','s','y',' ','M','I','D','I'}
-  #define PRODUCT_NAME_LEN	11
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"Teensy MIDI"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         4
   #define NUM_USB_BUFFERS	16
@@ -367,10 +381,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
 #elif defined(USB_MIDI_SERIAL)
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x0489
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'T','e','e','n','s','y',' ','M','I','D','I'}
-  #define PRODUCT_NAME_LEN	11
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"Serial/MIDI"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         5
   #define NUM_USB_BUFFERS	30
@@ -400,10 +416,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define PRODUCT_ID		0x0486
   #define RAWHID_USAGE_PAGE	0xFFAB  // recommended: 0xFF00 to 0xFFFF
   #define RAWHID_USAGE		0x0200  // recommended: 0x0100 to 0xFFFF
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'T','e','e','n','s','y','d','u','i','n','o',' ','R','a','w','H','I','D'}
-  #define PRODUCT_NAME_LEN	18
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"RawHID"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         4
   #define NUM_USB_BUFFERS	12
@@ -430,10 +448,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
 #elif defined(USB_FLIGHTSIM)
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x0488
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'T','e','e','n','s','y',' ','F','l','i','g','h','t',' ','S','i','m',' ','C','o','n','t','r','o','l','s'}
-  #define PRODUCT_NAME_LEN	26
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"Teensy Flight Sim Controls"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         4
   #define NUM_USB_BUFFERS	20
@@ -460,10 +480,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
 #elif defined(USB_FLIGHTSIM_JOYSTICK)
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x04D9
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'T','e','e','n','s','y',' ','F','l','i','g','h','t',' ','S','i','m',' ','C','o','n','t','r','o','l','s'}
-  #define PRODUCT_NAME_LEN	26
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"Teensy Flight Sim Controls"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         5
   #define NUM_USB_BUFFERS	20
@@ -496,10 +518,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
 #elif defined(USB_MTPDISK)
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x04D1
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'T','e','e','n','s','y',' ','M','T','P',' ','D','i','s','k'}
-  #define PRODUCT_NAME_LEN	15
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"Teensy MTP Disk"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         4
   #define NUM_USB_BUFFERS	20
@@ -527,10 +551,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
 #elif defined(USB_AUDIO)
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x04D2
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'T','e','e','n','s','y',' ','A','u','d','i','o'}
-  #define PRODUCT_NAME_LEN	12
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"Teensy Audio"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         5
   #define NUM_USB_BUFFERS	16
@@ -557,10 +583,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
 #elif defined(USB_MIDI_AUDIO_SERIAL)
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x048A
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'T','e','e','n','s','y',' ','M','I','D','I','/','A','u','d','i','o'}
-  #define PRODUCT_NAME_LEN	17
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"Teensy MIDI/Audio"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         8
   #define NUM_USB_BUFFERS	30
@@ -602,10 +630,12 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define DEVICE_CLASS		0xEF
   #define DEVICE_SUBCLASS	0x02
   #define DEVICE_PROTOCOL	0x01
-  #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		{'A','l','l',' ','T','h','e',' ','T','h','i','n','g','s'}
-  #define PRODUCT_NAME_LEN	14
+  #ifndef MANUFACTURER_NAME
+    #define MANUFACTURER_NAME	w"Teensyduino"
+  #endif
+  #ifndef PRODUCT_NAME
+    #define PRODUCT_NAME		w"All The Things"
+  #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         15
   #define NUM_USB_BUFFERS	31
