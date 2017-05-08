@@ -28,6 +28,7 @@
 //#include <avr/io.h>
 #include <stdint.h>
 #include <stdlib.h>
+#include <algorithm>
 #include "binary.h"
 #include "core_id.h"
 #include "core_pins.h"
@@ -64,6 +65,7 @@ extern "C"{
 #define typeof(a) decltype(a)
 #endif
 
+/*
 #define min(a, b) ({ \
   typeof(a) _a = (a); \
   typeof(b) _b = (b); \
@@ -74,6 +76,7 @@ extern "C"{
   typeof(b) _b = (b); \
   (_a > _b) ? _a : _b; \
 })
+*/
 #define abs(x) ({ \
   typeof(x) _x = (x); \
   (_x > 0) ? _x : -_x; \
@@ -131,6 +134,15 @@ void loop(void);
 
 #ifdef __cplusplus
 } // extern "C"
+
+using std::min;
+using std::max;
+
+constexpr float min(const float f, const uint32_t i) { return f < i ? f : i; }
+constexpr float max(const float f, const uint32_t i) { return f > i ? f : i; }
+constexpr float min(const uint32_t i, const float f) { return f < i ? f : i; }
+constexpr float max(const uint32_t i, const float f) { return f < i ? f : i; }
+
 #endif
 
 // fix C++ boolean issue
