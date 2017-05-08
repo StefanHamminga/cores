@@ -129,8 +129,8 @@ void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, byte val);
 //void attachInterrupt(uint8_t, void (*)(void), uint8_t mode);
 //void detachInterrupt(uint8_t);
 
-void setup(void);
-void loop(void);
+void setup(void) __attribute__((externally_visible, used, cold));
+void loop(void) __attribute__((externally_visible, used));
 
 #ifdef __cplusplus
 } // extern "C"
