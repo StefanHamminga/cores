@@ -119,10 +119,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define PRODUCT_ID		0x0483
   #define DEVICE_CLASS		2	// 2 = Communication Class
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"USB Serial"
+    #define PRODUCT_NAME		u"USB Serial"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS		4
@@ -144,10 +144,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x04D0
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"Keyboard"
+    #define PRODUCT_NAME		u"Keyboard"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         4
@@ -179,10 +179,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x0482
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"Keyboard/Mouse/Joystick"
+    #define PRODUCT_NAME		u"Keyboard/Mouse/Joystick"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         6
@@ -225,10 +225,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define DEVICE_SUBCLASS	0x02
   #define DEVICE_PROTOCOL	0x01
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"Serial/Keyboard/Mouse/Joystick"
+    #define PRODUCT_NAME		u"Serial/Keyboard/Mouse/Joystick"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS		7
@@ -271,10 +271,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x04D3
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"Keyboard/Touchscreen"
+    #define PRODUCT_NAME		u"Keyboard/Touchscreen"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         5
@@ -309,10 +309,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x04D4
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"Keyboard/Mouse/Touchscreen"
+    #define PRODUCT_NAME		u"Keyboard/Mouse/Touchscreen"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         6
@@ -352,10 +352,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x0485
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"Teensy MIDI"
+    #define PRODUCT_NAME		u"Teensy MIDI"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         4
@@ -382,10 +382,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x0489
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"Serial/MIDI"
+    #define PRODUCT_NAME		u"Serial/MIDI"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         5
@@ -417,10 +417,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define RAWHID_USAGE_PAGE	0xFFAB  // recommended: 0xFF00 to 0xFFFF
   #define RAWHID_USAGE		0x0200  // recommended: 0x0100 to 0xFFFF
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"RawHID"
+    #define PRODUCT_NAME		u"RawHID"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         4
@@ -449,10 +449,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x0488
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"Teensy Flight Sim Controls"
+    #define PRODUCT_NAME		u"Teensy Flight Sim Controls"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         4
@@ -481,10 +481,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x04D9
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"Teensy Flight Sim Controls"
+    #define PRODUCT_NAME		u"Teensy Flight Sim Controls"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         5
@@ -519,10 +519,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x04D1
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"Teensy MTP Disk"
+    #define PRODUCT_NAME		u"Teensy MTP Disk"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         4
@@ -552,10 +552,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x04D2
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"Teensy Audio"
+    #define PRODUCT_NAME		u"Teensy Audio"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         5
@@ -584,10 +584,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define VENDOR_ID		0x16C0
   #define PRODUCT_ID		0x048A
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"Teensy MIDI/Audio"
+    #define PRODUCT_NAME		u"Teensy MIDI/Audio"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         8
@@ -631,10 +631,10 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define DEVICE_SUBCLASS	0x02
   #define DEVICE_PROTOCOL	0x01
   #ifndef MANUFACTURER_NAME
-    #define MANUFACTURER_NAME	w"Teensyduino"
+    #define MANUFACTURER_NAME	u"Teensyduino"
   #endif
   #ifndef PRODUCT_NAME
-    #define PRODUCT_NAME		w"All The Things"
+    #define PRODUCT_NAME		u"All The Things"
   #endif
   #define EP0_SIZE		64
   #define NUM_ENDPOINTS         15
